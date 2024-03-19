@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ang-app';
+  title = 'ang-application';
+
+  tooltip = "подсказка";
+
+  user = {
+    name: "Ivan",
+    age : 40,
+  }
 }
