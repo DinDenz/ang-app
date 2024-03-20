@@ -17,8 +17,30 @@ export class AppComponent {
 
   arrOfAges = [{ age: 18 }, { age: 38 }, { age: 28 }];
 
-  handleClick () : void {
-    this.arrOfAges.push({age : 25})
+  handleClick(): void {
+    this.arrOfAges.push({ age: 25 })
   }
+
+  color = 'blue';
+
+  changeColor(color: string): void {
+
+    switch (color) {
+      case 'yellow':
+        this.color = "yellow";
+        break;
+      case 'red':
+        this.color = "red";
+        break;
+      case 'default':
+        this.color = "blue";
+        break;
+    }
+  }
+
+
+
+
+
 }
 

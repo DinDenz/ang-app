@@ -2,3 +2,21 @@
     color: red;
     font-size: 20px;
 }
+.some-class {
+    color: blue;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    border: 1px solid red;
+}
+.circle {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    transition: all 1s;
+}
