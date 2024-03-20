@@ -12,7 +12,13 @@ export class AppComponent {
 
   user = {
     name: "Ivan",
-    age : 40,
+    age: 40,
+  }
+
+  arrOfAges = [{ age: 18 }, { age: 38 }, { age: 28 }];
+
+  handleClick () : void {
+    this.arrOfAges.push({age : 25})
   }
 }
 
