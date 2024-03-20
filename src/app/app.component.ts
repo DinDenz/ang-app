@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'ang-application';
 
   tooltip = "подсказка";
+  text = "ghbnd"
 
   user = {
     name: "Ivan",
@@ -38,8 +39,11 @@ export class AppComponent {
     }
   }
 
+  backColor = 'rgba(150,115,200,0.7)';
 
-
+  setNewSsilName(newText : string) {
+    this.text = newText;
+  }
 
 
 }

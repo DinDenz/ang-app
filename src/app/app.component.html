@@ -1,9 +1,12 @@
 <div class="hello">Привет ангуляр {{title}} </div>
 <p>
-  <a href="#" title={{tooltip}}>ghbdtn</a>
+  <a href="#" title={{tooltip}}>{{text}}</a>
   <br>
   <a href="#" [title]='tooltip'>ghbdtn</a>
 </p>
+
+<app-top-section [backColor] = "backColor" (ChangeSsilText)="setNewSsilName($event)"></app-top-section>
+<app-middle-section></app-middle-section>
 
 <ul>
   <li>{{user.name}}</li>
