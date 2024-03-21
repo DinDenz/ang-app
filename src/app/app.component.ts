@@ -41,10 +41,10 @@ export class AppComponent {
 
   backColor = 'rgba(150,115,200,0.7)';
 
-  setNewSsilName(newText : string) {
+  setNewSsilName(newText: string) {
     this.text = newText;
   }
-
+  //--------------------------------------------------------------------------------------------------
 
 }
 

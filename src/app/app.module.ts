@@ -7,6 +7,7 @@ import { CutTextPipe } from './pipes/cut-text.pipe';
 import { SortArrayPipe } from './pipes/sort-array.pipe';
 import { TopSectionComponent } from './components/top-section/top-section.component';
 import { MiddleSectionComponent } from './components/middle-section/middle-section.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MiddleSectionComponent } from './components/middle-section/middle-secti
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     

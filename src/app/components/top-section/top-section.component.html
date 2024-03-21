@@ -1,5 +1,5 @@
 <p>top-section works!</p>
-<div class="top-section" [style.backgroundColor]="backColor" [style.boxShadow] = "shadow">
+<div class="top-section" [style.backgroundColor]="backColor" [style.boxShadow]="shadow">
     <nav>
         <ul class="nav-list">
             <li>
@@ -13,7 +13,29 @@
             </li>
         </ul>
     </nav>
-        <button (click)="changeShadowColor()">changeBackCo</button>
-        <button (click)="textChange()">changeTextInSsilk</button>
+    <button (click)="changeShadowColor()">changeBackCo</button>
+    <button (click)="textChange()">changeTextInSsilk</button>
 </div>
-
+<br>
+<br>
+<p [title]="phone">Номер телефона: {{phone}}</p>
+<button (click)="updatePhone()">Изменить телефон</button>
+<p>Полное имя пользователя: {{user.name + " " + user.surname}}</p>
+<p>Полное имя пользователя через функцию: {{fullName()}}</p>
+<input type="text" [value] = "phone" (input) = "onInput($event)">
+<br>
+<input type="text" [(ngModel)]="user.name">
+<br>
+<input type="text" [(ngModel)]="user.surname">
+<hr>
+<form action="#" (ngSubmit) = "onSubmit()">
+    <label>Логин:
+        <input type="text" name="login" [(ngModel)]="login">
+    </label>
+<br><br>
+    <label>Пароль:
+        <input type="text" name="password" [(ngModel)]="password">
+    </label>
+    <br>
+    <button type="submit">Кнопка</button>
+</form>

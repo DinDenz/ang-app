@@ -4,10 +4,22 @@
   <br>
   <a href="#" [title]='tooltip'>ghbdtn</a>
 </p>
+<br>
+<br>
+<br>
+<br>
+<app-top-section [backColor]="backColor" (ChangeSsilText)="setNewSsilName($event)"></app-top-section>
 
-<app-top-section [backColor] = "backColor" (ChangeSsilText)="setNewSsilName($event)"></app-top-section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <app-middle-section></app-middle-section>
-
 <ul>
   <li>{{user.name}}</li>
   <li>{{user.age}}</li>
@@ -17,7 +29,7 @@
   <li>{{user | json}}</li>
 </ul>
 
-<p>{{ "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Sunt non rem consequuntur minima culpa repellat nihil Consequatur, eos totam voluptates,consequuntur obcaecati odio, assumenda quidem temporibus facere quasi." | cutText:50}}</p>
+<p>{{ "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Sunt non rem consequuntur minima culpa repellat nihilConsequatur, eos totam voluptates,consequuntur obcaecati odio, assumenda quidem temporibus facere quasi." |cutText:50}}</p>
 
 <br>
 
