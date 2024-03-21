@@ -8,6 +8,7 @@ import { SortArrayPipe } from './pipes/sort-array.pipe';
 import { TopSectionComponent } from './components/top-section/top-section.component';
 import { MiddleSectionComponent } from './components/middle-section/middle-section.component';
 import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     CutTextPipe,
     SortArrayPipe,
     TopSectionComponent,
-    MiddleSectionComponent
+    MiddleSectionComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
