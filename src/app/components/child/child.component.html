@@ -1,1 +1,39 @@
-<p>child works!</p>
+<p [style.color] = "'red'">Atributs</p>
+<p [style.border] = "'1px solid red'" [style.width.px] = "100">Atributs</p>
+<p [class] = "{'new-сlass' : newClass, 'sec-сlass' : secClass}" (click)="changeClass($event)">Atributs</p>
+
+<p *ngIf="expression">Hello</p>
+<p *ngIf="!expression">buy</p>
+<button (click)="expression = !expression">toggle</button>
+<button (click)="changeExpression()">toggle</button>
+<hr>
+<button (click)="generateUser()">generate user</button>
+
+<ul *ngIf="deepObject && deepObject.user">
+    <li>Name is {{deepObject.user.name}}</li>
+    <li>Surname is {{deepObject.user.surname}}</li>
+</ul>
+<ul *ngIf="deepObject?.user">
+    <li>Name is {{deepObject.user.name}}</li>
+    <li>Surname is {{deepObject.user.surname}}</li>
+</ul>
+<ul *ngIf="deepObject?.user as user">
+    <li>Name is {{user.name}}</li>
+    <li>Surname is {{user.surname}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let user of users">{{user.id}},{{user.name}}</li>
+</ul>
+<ul>
+    <li *ngFor="let user of users;  trackBy : trackBy">{{user.id}},{{user.name}}</li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let user of users;  trackBy : trackBy" [ngSwitch]="user.font">
+        <div *ngSwitchCase="'italic'"><i>{{user.name}}</i></div>
+        <div *ngSwitchCase="'bold'"><b>{{user.name}}</b></div>
+        <div *ngSwitchDefault>{{user.name}}</div>
+    </li>
+</ul>
+<hr>
