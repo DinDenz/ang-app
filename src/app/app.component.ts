@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'ang-application';
+  /* title = 'ang-application';
 
   tooltip = "подсказка";
   text = "ghbnd"
@@ -43,8 +43,14 @@ export class AppComponent {
 
   setNewSsilName(newText: string) {
     this.text = newText;
-  }
-  //--------------------------------------------------------------------------------------------------
+  } */
+  //-----------------------------------------foo---------------------------------------------------------
+expression = false;
+
+onSayHi(text : string) {
+  console.log(text)
+};
+age = 19;
 
 }
 

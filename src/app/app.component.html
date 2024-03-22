@@ -54,4 +54,6 @@
 </ng-template>
 <ng-container *ngTemplateOutlet="privet; context:{aa: 'первая буква', bb: 'вторая буква'}" ></ng-container> -->
 
-<app-child></app-child>
+<!-- <app-child></app-child> -->
+<app-foo (sayHi) = "onSayHi($event)"  [(counter)] = "age" [title]="expression? 'one' : 'two'"></app-foo>
+<button (click) = "expression = !expression">{{!expression? 'one' : 'two'}}</button>

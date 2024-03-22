@@ -9,6 +9,7 @@ import { TopSectionComponent } from './components/top-section/top-section.compon
 import { MiddleSectionComponent } from './components/middle-section/middle-section.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponent } from './components/child/child.component';
+import { FooComponent } from './components/foo/foo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChildComponent } from './components/child/child.component';
     SortArrayPipe,
     TopSectionComponent,
     MiddleSectionComponent,
-    ChildComponent
+    ChildComponent,
+    FooComponent
   ],
   imports: [
     BrowserModule,
